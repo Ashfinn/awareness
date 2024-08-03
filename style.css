@@ -1,117 +1,72 @@
-:root {
-    --main-color: #ff1e00;
-    --secondary-color: #E8F9FD;
-    --accent-color: #59CE8F;
-    --background-color: #f5f5f5;
-    --font-color: #333;
-    --font-family: 'Helvetica Neue', Arial, sans-serif;
-    --font-size: 16px;
-}
-
+/* Set the font and background color for the entire website */
 body {
-    font-family: var(--font-family);
-    background-color: var(--background-color);
-    color: var(--font-color);
-    margin: 0;
-    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
 }
 
-header {
-    background-color: var(--main-color);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+/* Style for the website logo */
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #dc3545;
+    /* Red color */
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* Style for navigation links */
+.nav-link {
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+    color: #28a745;
+    /* Green color */
+}
+
+/* Style for cards */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for carousel items */
+.carousel-item {
+    height: 400px;
+}
+
+/* Center the content inside carousel items */
+.carousel-item div {
+    height: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px;
-    margin: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    border-bottom: 2px solid var(--accent-color);
-    padding-bottom: 10px;
-}
-
-.contact,
-.blog-post {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-    border-radius: 5px;
-}
-
-#emergency-contact,
-#blog-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-footer {
-    background-color: var(--main-color);
-    color: white;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: var(--font-size);
-}
-
-form button {
-    background-color: var(--main-color);
-    color: white;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: var(--font-size);
+    padding: 20px;
     transition: background-color 0.3s;
 }
 
-form button:hover {
-    background-color: var(--accent-color);
+/* Hover effect for carousel items */
+.carousel-item:hover div {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Style for section headers */
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    color: black;
+    /* Red color */
+}
+
+/* Style for the footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    color: #6c757d;
 }

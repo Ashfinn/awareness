@@ -5,80 +5,230 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uprising Support</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1 id="title">Uprising Support</h1>
-        <nav>
-            <ul>
-                <li><a href="#emergency">Emergency Contacts</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#links">Useful Links</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Header with navigation bar -->
+    <header class="bg-light shadow-sm py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="logo text-danger">Uprising Support</h1>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link text-danger" href="#emergency">Emergency Contacts</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-danger" href="#evidence">Evidence</a></li>
+                        <li class="nav-item"><a class="nav-link text-danger" href="#martyrs">Martyrs</a></li>
+                        <li class="nav-item"><a class="nav-link text-danger" href="#links">Useful Links</a></li>
+                        <li class="nav-item"><a class="nav-link text-danger" href="#blog">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link text-danger" href="#about">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main id="container">
-        <section id="emergency">
-            <h2>Emergency Contacts</h2>
-            <div id="emergency-contact">
-                <div class="contact">
-                    <h3>Ambulance</h3>
-                    <p>Contact Numbers and Locations</p>
+
+    <!-- Main content -->
+    <main class="container mt-5">
+        <!-- Landing section with carousel -->
+        <section id="landing" class="mb-5">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100 bg-danger text-light d-flex align-items-center justify-content-center"
+                            style="height: 400px;">
+                            <div class="text-center flex-column">
+                                <h2>Welcome to Uprising Support</h2>
+                                <p>Support the movement with verified information and resources.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 bg-success text-light d-flex align-items-center justify-content-center"
+                            style="height: 400px;">
+                            <div class="text-center flex-column">
+                                <h2>Emergency Contacts</h2>
+                                <p>Find urgent contact information in times of need.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 bg-danger text-light d-flex align-items-center justify-content-center"
+                            style="height: 400px;">
+                            <div class="text-center flex-column">
+                                <h2>Photo and Video Evidence</h2>
+                                <p>See how protestors have been attacked, sorted by date and place.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 bg-success text-light d-flex align-items-center justify-content-center"
+                            style="height: 400px;">
+                            <div class="text-center flex-column">
+                                <h2>List of Martyrs</h2>
+                                <p>Find the List of people who died or have been injured.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact">
-                    <h3>Hospitals</h3>
-                    <p>Contact Numbers and Locations</p>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Emergency Contacts section -->
+        <section id="emergency" class="mb-5">
+            <h2 class="text-danger border-bottom border-danger pb-2">Emergency Contacts</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title text-danger">Ambulance</h3>
+                            <p class="card-text">Contact Numbers and Locations</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact">
-                    <h3>Lawyers</h3>
-                    <p>Contact Information and Specialties</p>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title text-danger">Hospitals</h3>
+                            <p class="card-text">Contact Numbers and Locations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title text-danger">Lawyers</h3>
+                            <p class="card-text">Contact Information and Specialties</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="blog">
-            <h2>Blog</h2>
-            <div id="blog-container">
-                <div id="blog-1">
-                    <div class="blog-post">
-                        <h3>Post Title</h3>
-                        <p>Post content</p>
+
+        <!-- Evidence section -->
+        <section id="evidence" class="mb-5">
+            <h2 class="text-danger border-bottom border-danger pb-2">Photo and Video Evidence</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm mb-3">
+                        <img class="card-img-top" src="img/placeholder-1.jpg" alt="Evidence 1">
+                        <div class="card-body">
+                            <p class="card-text">Evidence of brutality in the capital city on January 1, 2024.</p>
+                        </div>
                     </div>
                 </div>
-                <div id="blog-2">
-                    <div class="blog-post">
-                        <h3>Post Title</h3>
-                        <p>Post content</p>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm mb-3">
+                        <img class="card-img-top" src="img/placeholder-1.jpg" alt="Evidence 2">
+                        <div class="card-body">
+                            <p class="card-text">Video footage of protests being dispersed violently on February 15,
+                                2024.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm mb-3">
+                        <img class="card-img-top" src="img/placeholder-1.jpg" alt="Evidence 3">
+                        <div class="card-body">
+                            <p class="card-text">Images from a peaceful rally turned chaotic on March 3, 2024.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="links">
-            <h2>Useful Links</h2>
-            <ul>
-                <li><a href="https://example.com">Link 1</a></li>
-                <li><a href="https://example.com">Link 2</a></li>
+
+        <!-- Martyrs section -->
+        <section id="martyrs" class="mb-5">
+            <h2 class="text-danger border-bottom border-danger pb-2">List of Martyrs</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Person 1 - Verified death during the protest on January 10, 2024.</li>
+                <li class="list-group-item">Person 2 - Verified death due to police brutality on February 20, 2024.</li>
+                <li class="list-group-item">Person 3 - Verified death during a rally on March 30, 2024.</li>
             </ul>
         </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Send</button>
-            </form>
+
+        <!-- Useful Links section -->
+        <section id="links" class="mb-5">
+            <h2 class="text-danger border-bottom border-danger pb-2">Useful Links</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a class="text-danger" href="https://example.com">Link 1</a></li>
+                <li class="list-group-item"><a class="text-danger" href="https://example.com">Link 2</a></li>
+                <li class="list-group-item"><a class="text-danger" href="https://example.com">Link 3</a></li>
+            </ul>
+        </section>
+
+        <!-- Blog section -->
+        <section id="blog" class="mb-5">
+            <h2 class="text-danger border-bottom border-danger pb-2">Blog</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title text-danger">Blog Post 1</h3>
+                            <p class="card-text">Fictional story placeholder content of blog post 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title text-danger">Blog Post 2</h3>
+                            <p class="card-text">Fictional story placeholder content of blog post 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm mb-3">
+                        <div class="card-body">
+                            <h3 class="card-title text-danger">Blog Post 3</h3>
+                            <p class="card-text">Fictional story placeholder content of blog post 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="mb-5">
+            <h2 class="text-danger border-bottom border-danger pb-2">About</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae velit nisi. Donec malesuada, nisi vel
+                suscipit placerat, nunc massa fermentum justo, et gravida erat orci ut turpis.</p>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Uprising Support. All rights reserved.</p>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Petria Uprising Support. All rights reserved.</p>
     </footer>
-    <script src="scripts/script.js"></script>
+
+    <!-- JS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        // Initialize WOW.js for scroll animations
+        new WOW().init();
+    </script>
 </body>
 
 </html>
