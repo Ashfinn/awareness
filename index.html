@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uprising Support</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>Uprising Support</h1>
+        <h1 id="title">Uprising Support</h1>
         <nav>
             <ul>
                 <li><a href="#emergency">Emergency Contacts</a></li>
@@ -18,27 +20,39 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="container">
         <section id="emergency">
             <h2>Emergency Contacts</h2>
-            <div class="contact">
-                <h3>Ambulance</h3>
-                <p>Contact Numbers and Locations</p>
-            </div>
-            <div class="contact">
-                <h3>Hospitals</h3>
-                <p>Contact Numbers and Locations</p>
-            </div>
-            <div class="contact">
-                <h3>Lawyers</h3>
-                <p>Contact Information and Specialties</p>
+            <div id="emergency-contact">
+                <div class="contact">
+                    <h3>Ambulance</h3>
+                    <p>Contact Numbers and Locations</p>
+                </div>
+                <div class="contact">
+                    <h3>Hospitals</h3>
+                    <p>Contact Numbers and Locations</p>
+                </div>
+                <div class="contact">
+                    <h3>Lawyers</h3>
+                    <p>Contact Information and Specialties</p>
+                </div>
             </div>
         </section>
         <section id="blog">
             <h2>Blog</h2>
-            <div class="blog-post">
-                <h3>Post Title</h3>
-                <p>Post content</p>
+            <div id="blog-container">
+                <div id="blog-1">
+                    <div class="blog-post">
+                        <h3>Post Title</h3>
+                        <p>Post content</p>
+                    </div>
+                </div>
+                <div id="blog-2">
+                    <div class="blog-post">
+                        <h3>Post Title</h3>
+                        <p>Post content</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="links">
@@ -66,4 +80,5 @@
     </footer>
     <script src="scripts/script.js"></script>
 </body>
+
 </html>
