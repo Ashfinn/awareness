@@ -30,4 +30,6 @@
     - [ ] do a theme overhaul 
     - [ ] add components to the websites
     - [ ] prevent XXS and CSRF attacks
+    - [ ] hover effects
+    - [ ] have the contact us form be there to give us more information 
     
